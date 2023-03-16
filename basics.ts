@@ -45,3 +45,17 @@ let people:  Person[];                 // array of objects
 let course: string | number = 'React';
 
 course = 1343;
+
+// Functions and types
+
+function add(a: number, b: number) {
+    return a + b;
+}                                          // function type is inferred as number
+
+function sub(a: number, b: number) : number {
+    return a - b;
+}                                       // we define type of function as this
+
+function printOutput(value: any) {
+    console.log(value); 
+}                                       // type of function here is void like null and undefined
