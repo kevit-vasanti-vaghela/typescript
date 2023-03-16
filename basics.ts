@@ -11,7 +11,7 @@ let score: number = 20;  // gtivalid
 
 age = 12;
 
-let userName: string;
+let userName: string | string[];         // union type
 
 userName = 'Max';
 
@@ -39,3 +39,10 @@ let people: {
     name: string,
     age: number;
 }[];                 // array of objects
+
+
+// Type inference
+
+let course: string | number = 'React';
+
+course = 1343;
