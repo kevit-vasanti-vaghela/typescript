@@ -25,20 +25,19 @@ let hobbies: string[];
 
 hobbies = ['Sports', 'Cooking'];
 
-let person: {
+type Person =  {
     name: string,
     age: number; 
-};                  // single object
+};  
+
+let person: Person;               // single object
 
 person = {
     name: 'Max',
     age: 32
 }
 
-let people: {
-    name: string,
-    age: number;
-}[];                 // array of objects
+let people:  Person[];                 // array of objects
 
 
 // Type inference
