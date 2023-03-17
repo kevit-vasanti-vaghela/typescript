@@ -54,8 +54,21 @@ function add(a: number, b: number) {
 
 function sub(a: number, b: number) : number {
     return a - b;
-}                                       // we define type of function as this
+}                                       // we can define type of function as this
 
 function printOutput(value: any) {
     console.log(value); 
 }                                       // type of function here is void like null and undefined
+
+// Generics
+
+function insertAtBeginning<T>(array: T[], value: T) {
+    const newArray = [value, ...array];
+    return newArray;
+}
+
+const demoArray = [1, 2, 3];
+
+const updatedArray = insertAtBeginning(demoArray, -1);
+
+const stringArray = insertAtBeginning(['a','b','c'], 'd')
